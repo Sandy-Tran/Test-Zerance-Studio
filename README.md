@@ -21,10 +21,18 @@ Oui il est responsive.<br/> J'ai décidé de cacher la navbar et de faire appara
 
 ### Screenshots
 
+
+#### Capture d'écran Homepage format Desktop
 ![Capture 1 Header Format Desktop](/Assets/Images/Capture-1.png)
+#### Capture d'écran Portfolio format Desktop
 ![Capture 2 Grid Format Desktop](/Assets/Images/Capture-2.png)
+#### Capture d'écran Slider format Desktop
 ![Capture 3 Slider Format Desktop](/Assets/Images/Capture-3.png)
+#### Capture d'écran Formulaire format Desktop
 ![Capture 4 Form Format Desktop](/Assets/Images/Capture-4.png)
+#### Capture d'écran Homepage format Mobile
 ![Capture 5 Format Mobile](/Assets/Images/Capture-5.png)
+#### Capture d'écran Portfolio format Mobile
 ![Capture 6 Grid Format Mobile](/Assets/Images/Capture-6.png)
+#### Capture d'écran Formulaire format Mobile
 ![Capture 7 Form Format Mobile](/Assets/Images/Capture-7.png)
