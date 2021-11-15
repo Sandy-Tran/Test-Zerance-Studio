@@ -19,6 +19,10 @@ Oui il est responsive.<br/> J'ai décidé de cacher la navbar et de faire appara
 * Pour la section "slider" j'ai utilisé la librairie splidejs.
 * Le "text infinite" est en full CSS3.
 
+### Lien Github Page
+
+https://sandy-tran.github.io/Test-Zerance-Studio/
+
 ### Screenshots
 
 
