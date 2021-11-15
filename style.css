@@ -1,0 +1,557 @@
+@font-face {
+    font-family: "Karla";
+    src: url(Assets/Police/Karla-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Optia";
+    src: url('Assets/Police/OPTIAmway.ttf.woff') format('woff');
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    color: black;
+}
+
+li {
+    list-style: none;   
+}
+
+a {
+    text-decoration: none;  
+}
+
+
+/* NAVBAR */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between; 
+    padding-right: 6em;
+}
+
+.nav-item {
+   margin-left: 3em;
+}
+
+.nav-link{
+    display: inline;
+    font-family: "futura";
+    font-size: 1.2vw;
+    font-weight: bolder;
+    color: #000000;  
+}
+
+.nav-link::after{
+    content: "";
+    display: block;
+    position: relative;
+    width: 0%;
+    height: 3px;
+    background: #FDCD1C;
+    transition: width 0.2s ease-in-out;
+    margin-top: 4px;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.nav-link:hover{
+    color: #FDCD1C;
+}
+
+.nav-logo > img{
+    width: 11em;
+    height: 6em;
+}
+
+
+/* BANNER */
+
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 5em 15em 5em;
+}
+
+.banner > p {
+    font-size: 1.8vw;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.banner > h1{
+    font-family: "futura", sans-serif;
+    font-size: 3.5vw;
+    text-align: center;
+    line-height: 1.5em;
+    width: 60%;
+}
+
+.banner > h1::before{
+    content:"<";
+}
+
+.banner > h1::after{
+    content:"/>";
+}
+
+mark{
+    display: inline-block;
+    line-height: 0em;
+    padding-bottom: 0.5em;
+    background-color: #FDCD1C;
+}
+
+
+/* PORTFOLIO */
+
+
+.portfolio {
+    background-color: black;
+    padding: 7em 0 7em 0;
+}
+
+.portfolio > p {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: 3em;
+}
+
+.container__grid {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 50px; 
+    grid-template-areas:
+      "logo1 logo2 logo3 logo4 logo5"
+      "logo6 logo7 logo8 logo9 logo10"
+      "logo11 logo12 logo13 logo14 logo15";
+    justify-items: center;
+    align-items: center;
+    margin: 0 10em 0 10em;
+  }
+
+  .responsive{
+    width: 100%;
+    height: auto;
+  }
+
+  .logo{
+      width: 100%;
+  }
+  
+  .logo1 { grid-area: logo1; }
+  
+  .logo2 { grid-area: logo2; }
+  
+  .logo3 { grid-area: logo3; }
+  
+  .logo4 { grid-area: logo4; }
+  
+  .logo5 { grid-area: logo5; }
+  
+  .logo6 { grid-area: logo6; }
+  
+  .logo7 { grid-area: logo7; }
+  
+  .logo8 { grid-area: logo8; }
+  
+  .logo9 { grid-area: logo9; }
+  
+  .logo10 { grid-area: logo10; }
+  
+  .logo11 { grid-area: logo11; }
+  
+  .logo12 { grid-area: logo12; }
+  
+  .logo13 { grid-area: logo13; }
+  
+  .logo14 { grid-area: logo14; }
+  
+  .logo15 { grid-area: logo15; }
+  
+
+  
+
+  /* SLIDER */
+
+
+  .splide__slide {
+    display: flex;
+  }
+
+  .slide__content{
+      width: 90vw;
+      position: relative;
+      z-index: 1;
+  }
+
+  .text{
+      position: absolute;
+      z-index: 2;
+      width: 25vw;
+      height: 25vw;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      top: 14vw;
+      left: 55vw;
+      font-size: 1vw;
+  }
+
+  .text > h3{
+      font-family: "Optia", sans-serif;
+      font-size: 3vw;
+  }
+
+  .description{
+    text-align: center;
+    margin: 0 20px 0 20px;
+    line-height: 1.7vw;
+  }
+
+  .text > button{
+    font-family: "Futura", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .text > button::before{
+      content: "<";
+  }
+
+  .text > button::after{
+      content: "/>";
+  }
+
+  .text > button:hover{
+      font-style: italic;
+  }
+
+  .slide__content > img{
+      width: 100%;
+  }
+
+  .splide__slide__container {
+    width: 100%;
+  }
+
+  .splide__arrow{
+      background: none;
+      color: black;
+      opacity: none;
+  }
+
+
+  .splide__pagination__page{
+      display: none;
+  }
+
+  .splide__arrow--prev{
+      display: none;
+  }
+
+  .splide__arrow--next{
+      right: 12vw;
+      font-size: 1.5rem;
+  }
+
+  
+
+/* TEXT INFINITE */
+
+
+.container__infinite{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    background-color: #FDCD1C;
+    padding: 2em 0 2em 0;
+} 
+
+.txt{
+    white-space: nowrap;
+    font-family: "futura";
+    font-weight: bold;
+    font-size: 1.4em;
+    color: white;
+    animation: scrollTxt 15s linear infinite;
+}
+
+@keyframes scrollTxt {
+    0% {
+        transform: translate(0%, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+
+/* POP UP CONTACT */
+
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid black;
+    z-index: 9;
+    font-family: "Futura", sans-serif;
+  }
+
+  form > h1{
+      padding: 20px;
+      text-align: center;  
+  }
+
+  label{
+      padding: 5px;
+  }
+  
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+  }
+  
+
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: black 2px solid;
+    background: white;
+  }
+
+  textarea{
+    border: black 2px solid;
+    background: white;
+  }
+  
+
+  .form-container input[type=text]:focus{
+    background-color: white;
+    outline: none;
+  }
+  
+
+  .form-container .btn {
+    background-color: #FDCD1C;
+    border: black 2px solid;
+    color: black;
+    padding: 15px 15px;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    font-family: "Futura", sans-serif;
+    margin: 15px auto;
+  }
+  
+ 
+  .form-container .cancel {
+    background-color: #FDCD1C;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    position: absolute;
+    transform : translate(860%, -130%);
+    opacity: 1;
+  }
+  
+
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+
+  .contact{
+      display: none;
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      background-color: #FDCD1C;
+      cursor: pointer;
+      bottom: 0;
+      right: 0;
+      margin: 0 20px 20px 0;
+      position: fixed;
+      border: black 2px solid;
+  }
+
+  .contact > img{
+      height: 30px;
+      width: 20px;
+  }
+
+
+
+
+ 
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+
+    .nav-menu{
+        display: none;
+    }
+
+    .container__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        gap: 20px 20px;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+          "logo1 logo2"
+          "logo3 logo4"
+          "logo5 logo6"
+          "logo7 logo8"
+          "logo9 logo10"
+          "logo11 logo12"
+          "logo13 logo14"
+          "logo15 .";
+        margin: auto;
+      }
+
+      .logo{
+          width: 70%;
+      }
+      
+      .logo1 { grid-area: logo1; }
+      
+      .logo2 { grid-area: logo2; }
+      
+      .logo3 { grid-area: logo3; }
+      
+      .logo4 { grid-area: logo4; }
+      
+      .logo5 { grid-area: logo5; }
+      
+      .logo6 { grid-area: logo6; }
+      
+      .logo7 { grid-area: logo7; }
+      
+      .logo8 { grid-area: logo8; }
+      
+      .logo9 { grid-area: logo9; }
+      
+      .logo10 { grid-area: logo10; }
+      
+      .logo11 { grid-area: logo11; }
+      
+      .logo12 { grid-area: logo12; }
+      
+      .logo13 { grid-area: logo13; }
+      
+      .logo14 { grid-area: logo14; }
+      
+      .logo15 { grid-area: logo15; }
+
+      .description{
+        font-size: 1.2em;
+    }
+
+
+
+      .contact{
+        display: block;
+    }
+
+    .form-popup{
+        width: 60%;
+    }
+
+    form > h1{
+        font-size: 3vw;
+    }
+
+    .form-container .cancel {
+        background-color: #FDCD1C;
+        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transform : translate(-100%, -160%);
+        opacity: 1;
+        z-index: 999;
+ 
+    
+      } 
+
+
+    
+}
+
+
+@media only screen and (max-width: 576px){
+
+    .banner{
+        padding : 2em 2em 10em 2em;
+    }
+
+    .banner > p {
+        font-size: 1.5em;
+    }
+
+    .banner > h1 {
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    form > h1{
+        font-size: 10px;
+    }
+
+    .description{
+        font-size: 1.2em;
+    }
+
+    
+       
+}

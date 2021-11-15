@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"/>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Zerance</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><img src="Assets/Images/LogoZerance.png" alt="logo studio zerance"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Nos Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#slide" class="nav-link">Notre Offre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#studio" class="nav-link">Le Studio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="openForm()">Contact</a>
+                </li>
+            </ul>   
+        </nav>
+</header>
+
+<!-- section banniere -->
+<div class="banner">
+    <p>SINCE 2016</p>
+    <h1> We create from scratch amazing <mark>Shopify</mark></h1>
+</div>
+
+<section>
+
+    <!--section  portfolio -->
+<div class="portfolio" id="portfolio">
+    <p>nos clients sont géniaux !</p>
+    <div class="container__grid">
+        <div class="logo1 logo"><a href="https://yokoshop.com/"><img src="Assets/Images/yoko.png" alt="yoko" class="responsive"></a></div>
+        <div class="logo2 logo"><img src="Assets/Images/webedia.png" alt="webedia" class="responsive"></div>
+        <div class="logo3 logo"><img src="Assets/Images/avnier.png" alt="avnier" class="responsive"></div>
+        <div class="logo4 logo"><img src="Assets/Images/seasonly.png" alt="seasonly" class="responsive"></div>
+        <div class="logo5 logo"><img src="Assets/Images/joone.png" alt="joone" class="responsive"></div>
+        <div class="logo6 logo"><img src="Assets/Images/universal.png" alt="universal" class="responsive"></div>
+        <div class="logo7 logo"><img src="Assets/Images/boxtal.png" alt="" class="responsive"></div>
+        <div class="logo8 logo"><img src="Assets/Images/fempo.png" alt="" class="responsive"></div>
+        <div class="logo9 logo"><img src="Assets/Images/bonsoir.png" alt="" class="responsive"></div>
+        <div class="logo10 logo"><img src="Assets/Images/mars.png" alt="" class="responsive"></div>
+        <div class="logo11 logo"><img src="Assets/Images/bigfernand.png" alt="" class="responsive"></div>
+        <div class="logo12 logo"><img src="Assets/Images/lafourche.png" alt="" class="responsive"></div>
+        <div class="logo13 logo"><img src="Assets/Images/riviera.png" alt="" class="responsive"></div>
+        <div class="logo14 logo"><img src="Assets/Images/cdiscount.png" alt="" class="responsive"></div>
+        <div class="logo15 logo"><img src="Assets/Images/tealer.png" alt="" class="responsive"></div>
+      </div>  
+</div>
+
+
+<!-- section slider -->
+<div class="splide" id="slide">
+
+
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+                <div class="splide__slide__container">
+                    <div class="slide__content">
+                        <img src="Assets/Images/Artboard_2.jpg"  alt="">                 
+                    </div>
+                    <div class="text">
+                        <p>FROM SCRATCH /</p>
+                        <h3>seasonly</h3>
+                        <p class="description">Développement site from scratch et d'un quiz personnalisé avec abonnement. Développement site from scratch et d'un quiz personnalisé avec abonnement.</p>
+                        <button><mark>Voir plus</mark></button>
+                    </div>
+                </div>    
+            </li>
+            <li class="splide__slide">
+                <div class="splide__slide__container">
+                    <div class="slide__content">
+                        <img src="Assets/Images/Artboard_1.jpg" alt="">                    
+                    </div>
+                </div>    
+            </li>
+        </ul>
+    </div>
+    
+</div>
+
+<!-- section text infinite -->
+<div class="container__infinite" id="studio">
+    <span class="txt t1">Dans la vallée, oh oh, de Dana, lalilala, dans la vallée, oh oh, j'ai pu entendre les échos, dans la vallée oh oh, de Dana, lalilala, dans la vallée, oh oh, des chants de guerre près des tombeaux,&nbsp;</span>
+    <span class="txt t2">dans la vallée, oh oh, de Dana, lalilala, dans la vallée, oh oh, j'ai pu entendre les échos, dans la vallée oh oh, de Dana, lalilala, dans la vallée, oh oh, des chants de guerre près des tombeaux,&nbsp;</span>
+</div>
+
+
+
+<!-- section pop up -->
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1><mark>Laisse nous un message</mark></h1>
+  
+      <label for="firstName"><b>Prenom</b></label>
+      <input type="text" class="name" placeholder="Sandy" name="firstname" required>
+  
+      <label for="mail"><b>Email</b></label>
+      <input type="text" class="mail" placeholder="nom@mail.com" name="mail" required>
+
+      <label for="message"><b>Message</b></label>
+      <textarea class="message" name="message" placeholder="Ton message" style="height:100px"></textarea>
+  
+      <input type="submit" class="btn" value="Valider"  onclick="verifyInput(event)"/>
+      <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+    </form>
+  </div>
+
+ 
+
+</section>
+
+<button onclick="openForm()" class="contact"><img src="Assets/Images/comment-solid.svg" alt=""></button>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+
+</body>
+</html>
+
